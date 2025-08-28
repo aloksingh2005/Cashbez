@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Cashbez</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact-us.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Header content will be dynamically loaded here -->
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="tag">GET IN TOUCH</span>
+                    <h1>Let's Build Something <span class="highlight">Amazing</span> Together</h1>
+                    <p>Whether you're interested in partnerships, career opportunities, or have general inquiries, we're here to help. Reach out to us and let's start a conversation.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact-form" class="btn primary-btn">Send Message</a>
+                        <a href="#locations" class="btn secondary-btn">View Locations</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/contact/contact-hero.png" alt="Contact Us">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Categories -->
+        <section class="contact-categories">
+            <div class="container">
+                <div class="categories-grid">
+                    <div class="category-card">
+                        <i class="fas fa-handshake"></i>
+                        <h3>Business Partnerships</h3>
+                        <p>Interested in partnering with us? Let's explore opportunities for collaboration and growth.</p>
+                        <a href="#partnership-form" class="category-link">Become a Partner <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Career Opportunities</h3>
+                        <p>Join our team and be part of an innovative company shaping the future of digital payments.</p>
+                        <a href="careers.html" class="category-link">View Openings <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-newspaper"></i>
+                        <h3>Media Inquiries</h3>
+                        <p>For press releases, interviews, or media-related questions, our PR team is here to assist.</p>
+                        <a href="press-media.html" class="category-link">Media Kit <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact-form" class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="career">Career Opportunity</option>
+                                <option value="media">Media Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Locations -->
+        <section id="locations" class="office-locations">
+            <div class="container">
+                <h2>Our Global Offices</h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="location-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Mumbai Office</h3>
+                        </div>
+                        <div class="location-details">
+                            <p>123 Business Park</p>
+                            <p>Andheri East</p>
+                            <p>Mumbai, Maharashtra 400093</p>
+                            <p>India</p>
+                            <a href="https://maps.google.com" target="_blank" class="direction-link">
+                                Get Directions <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Delhi Office</h3>
+                        </div>
+                        <div class="location-details">
+                            <p>456 Tech Hub</p>
+                            <p>Connaught Place</p>
+                            <p>New Delhi 110001</p>
+                            <p>India</p>
+                            <a href="https://maps.google.com" target="_blank" class="direction-link">
+                                Get Directions <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Bangalore Office</h3>
+                        </div>
+                        <div class="location-details">
+                            <p>789 Innovation Center</p>
+                            <p>Koramangala</p>
+                            <p>Bangalore, Karnataka 560034</p>
+                            <p>India</p>
+                            <a href="https://maps.google.com" target="_blank" class="direction-link">
+                                Get Directions <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Partnership Form -->
+        <section id="partnership-form" class="partnership-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Become a Partner</h2>
+                        <p>Fill out this form to explore partnership opportunities with Cashbez.</p>
+                    </div>
+                    <form class="partnership-form">
+                        <div class="form-group">
+                            <label for="partner-name">Full Name *</label>
+                            <input type="text" id="partner-name" name="partner-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-email">Email Address *</label>
+                            <input type="email" id="partner-email" name="partner-email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-company">Company Name *</label>
+                            <input type="text" id="partner-company" name="partner-company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="partnership-type">Partnership Type *</label>
+                            <select id="partnership-type" name="partnership-type" required>
+                                <option value="">Select partnership type</option>
+                                <option value="merchant">Merchant Partnership</option>
+                                <option value="technology">Technology Integration</option>
+                                <option value="distribution">Distribution Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="partner-message">Tell us about your business and partnership goals *</label>
+                            <textarea id="partner-message" name="partner-message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-handshake"></i>
+                            Submit Partnership Request
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Footer content will be dynamically loaded here -->
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/contact-us.js"></script>
+</body>
+</html>

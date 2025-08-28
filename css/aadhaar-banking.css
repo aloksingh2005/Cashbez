@@ -1,0 +1,375 @@
+/* Hero Section */
+.aadhaar-hero {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+    padding: 120px 0 80px;
+    position: relative;
+    overflow: hidden;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.aadhaar-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/pattern.png');
+    opacity: 0.1;
+}
+
+.aadhaar-hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.aadhaar-hero-text {
+    max-width: 600px;
+}
+
+.aadhaar-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    position: relative;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.aadhaar-subtitle {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    animation: fadeInUp 0.8s ease-out 0.2s forwards;
+    opacity: 0;
+}
+
+.aadhaar-hero-buttons {
+    display: flex;
+    gap: 20px;
+    animation: fadeInUp 0.8s ease-out 0.4s forwards;
+    opacity: 0;
+}
+
+.aadhaar-primary-btn {
+    background: #27ae60;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.aadhaar-primary-btn:hover {
+    background: #219a52;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+.aadhaar-secondary-btn {
+    background: transparent;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.aadhaar-secondary-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.aadhaar-hero-image {
+    animation: fadeInRight 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.aadhaar-hero-illustration {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+.aadhaar-hero-illustration:hover {
+    transform: scale(1.15);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Responsive Design for Hero */
+@media (max-width: 992px) {
+    .aadhaar-hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .aadhaar-hero-text {
+        max-width: 100%;
+    }
+
+    .aadhaar-hero-buttons {
+        justify-content: center;
+    }
+
+    .aadhaar-hero-image {
+        order: -1;
+        margin-bottom: 40px;
+    }
+
+    .aadhaar-hero-illustration {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .aadhaar-hero {
+        padding: 100px 0 60px;
+        min-height: auto;
+    }
+
+    .aadhaar-title {
+        font-size: 2.5rem;
+    }
+
+    .aadhaar-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .aadhaar-hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .aadhaar-primary-btn,
+    .aadhaar-secondary-btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .aadhaar-hero-illustration {
+        max-width: 300px;
+    }
+}
+
+/* Services Section */
+.aadhaar-services {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.aadhaar-section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #2c3e50;
+    font-size: 2.5rem;
+}
+
+.aadhaar-services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 0 20px;
+}
+
+.aadhaar-service-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.aadhaar-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.aadhaar-service-img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.aadhaar-service-card:hover .aadhaar-service-img {
+    transform: scale(1.1);
+}
+
+.aadhaar-service-title {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.aadhaar-service-desc {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Benefits Section */
+.aadhaar-benefits {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+}
+
+.aadhaar-benefits-list {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.aadhaar-benefit-item {
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background: white;
+    border-radius: 10px;
+    position: relative;
+    padding-left: 3.5rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.aadhaar-benefit-item:hover {
+    transform: translateX(10px);
+}
+
+.aadhaar-benefit-item::before {
+    content: "✓";
+    color: #27ae60;
+    position: absolute;
+    left: 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* How to Section */
+.aadhaar-how-to {
+    padding: 100px 0;
+    background-color: #fff;
+}
+
+.aadhaar-steps-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 20px;
+}
+
+.aadhaar-step-card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.aadhaar-step-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.aadhaar-step-number {
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.aadhaar-step-card:hover .aadhaar-step-number {
+    transform: scale(1.1);
+}
+
+.aadhaar-step-title {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.aadhaar-step-desc {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Container */
+.aadhaar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Animations */
+@keyframes aadhaarFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.aadhaar-service-card,
+.aadhaar-step-card,
+.aadhaar-benefit-item {
+    animation: aadhaarFadeIn 0.5s ease-out forwards;
+}

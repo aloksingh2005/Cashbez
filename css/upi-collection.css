@@ -1,0 +1,583 @@
+/* UPI Collection Page Styles */
+
+/* Hero Section */
+#hero-upi {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e6f3ff 100%);
+    padding: 120px 0 100px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-upi::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #2196F3, #64B5F6);
+}
+
+#hero-upi .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#hero-upi .hero-content {
+    flex: 1;
+    max-width: 55%;
+    padding-right: 40px;
+}
+
+#hero-upi .hero-content .tag {
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+
+#hero-upi .hero-content h1 {
+    font-size: 52px;
+    color: #212121;
+    margin: 25px 0;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+#hero-upi .hero-content h1 .highlight {
+    color: #2196F3;
+    position: relative;
+}
+
+#hero-upi .hero-content h1 .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(33, 150, 243, 0.2);
+    z-index: -1;
+}
+
+#hero-upi .hero-content p {
+    font-size: 19px;
+    color: #555;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+#hero-upi .hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+#hero-upi .hero-buttons .btn {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#hero-upi .hero-buttons .primary-btn {
+    background-color: #2196F3;
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(33, 150, 243, 0.3);
+}
+
+#hero-upi .hero-buttons .primary-btn:hover {
+    background-color: #1976D2;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(33, 150, 243, 0.4);
+}
+
+#hero-upi .hero-buttons .secondary-btn {
+    background-color: #f0f0f0;
+    color: #2196F3;
+    border: 2px solid #2196F3;
+}
+
+#hero-upi .hero-buttons .secondary-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#hero-upi .hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+#hero-upi .hero-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Features Section */
+#features-upi {
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+#features-upi .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#features-upi .section-header {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+#features-upi .section-tag {
+    display: inline-block;
+    background-color: rgba(33, 150, 243, 0.1);
+    color: #2196F3;
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+#features-upi .section-header h2 {
+    font-size: 42px;
+    color: #212121;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#features-upi .section-header .highlight {
+    color: #2196F3;
+    position: relative;
+}
+
+#features-upi .section-header .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(33, 150, 243, 0.2);
+    z-index: -1;
+}
+
+#features-upi .section-description {
+    font-size: 18px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+#features-upi .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+#features-upi .feature-card {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 35px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+#features-upi .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 0;
+    background: #2196F3;
+    transition: height 0.4s ease;
+}
+
+#features-upi .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+}
+
+#features-upi .feature-card:hover::before {
+    height: 100%;
+}
+
+#features-upi .feature-icon {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background: #f0f7ff;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+#features-upi .feature-card:hover .feature-icon {
+    background: #2196F3;
+    transform: scale(1.1);
+}
+
+#features-upi .feature-icon i {
+    font-size: 28px;
+    color: #2196F3;
+    transition: all 0.4s ease;
+}
+
+#features-upi .feature-card:hover .feature-icon i {
+    color: #fff;
+}
+
+#features-upi .feature-content {
+    flex: 1;
+}
+
+#features-upi .feature-content h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+#features-upi .feature-content p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* How It Works Section */
+#how-it-works {
+    padding: 120px 0;
+    background: linear-gradient(135deg, #f8f9ff 0%, #f0f7ff 100%);
+}
+
+#how-it-works .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#how-it-works .steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    position: relative;
+}
+
+#how-it-works .step-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    position: relative;
+    z-index: 1;
+}
+
+#how-it-works .step-number {
+    width: 60px;
+    height: 60px;
+    background: #2196F3;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+#how-it-works .step-card h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#how-it-works .step-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+#how-it-works .step-connector {
+    flex: 1;
+    height: 2px;
+    background: #2196F3;
+    margin: 0 20px;
+    position: relative;
+    top: -30px;
+}
+
+/* Pricing Section */
+#pricing-upi {
+    padding: 120px 0;
+    background-color: #fff;
+}
+
+#pricing-upi .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#pricing-upi .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+#pricing-upi .pricing-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    transition: all 0.4s ease;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+#pricing-upi .pricing-card.featured {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(33, 150, 243, 0.15);
+    border: 2px solid #2196F3;
+}
+
+#pricing-upi .pricing-header {
+    margin-bottom: 30px;
+}
+
+#pricing-upi .pricing-header h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#pricing-upi .price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 5px;
+}
+
+#pricing-upi .price .amount {
+    font-size: 48px;
+    font-weight: 700;
+    color: #2196F3;
+}
+
+#pricing-upi .price .period {
+    font-size: 16px;
+    color: #666;
+}
+
+#pricing-upi .features-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px;
+}
+
+#pricing-upi .features-list li {
+    padding: 12px 0;
+    color: #666;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+}
+
+#pricing-upi .features-list li:last-child {
+    border-bottom: none;
+}
+
+#pricing-upi .features-list i {
+    color: #2196F3;
+    margin-right: 10px;
+}
+
+#pricing-upi .pricing-card .btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+}
+
+/* CTA Section */
+#cta-upi {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    color: #fff;
+    text-align: center;
+}
+
+#cta-upi .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#cta-upi .cta-content h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+#cta-upi .cta-content h2 .highlight {
+    position: relative;
+}
+
+#cta-upi .cta-content h2 .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: -1;
+}
+
+#cta-upi .cta-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+#cta-upi .cta-content .btn {
+    background-color: #fff;
+    color: #2196F3;
+    padding: 16px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+#cta-upi .cta-content .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    #hero-upi .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-upi .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 50px;
+    }
+
+    #hero-upi .hero-buttons {
+        justify-content: center;
+    }
+
+    #how-it-works .steps-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #how-it-works .step-connector {
+        width: 2px;
+        height: 30px;
+        margin: 0;
+    }
+
+    #pricing-upi .pricing-card.featured {
+        transform: none;
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-upi .hero-content h1 {
+        font-size: 36px;
+    }
+
+    #features-upi .section-header h2,
+    #how-it-works .section-header h2,
+    #pricing-upi .section-header h2,
+    #cta-upi .cta-content h2 {
+        font-size: 32px;
+    }
+
+    #hero-upi .hero-content p,
+    #features-upi .section-description,
+    #how-it-works .section-description,
+    #pricing-upi .section-description {
+        font-size: 16px;
+    }
+
+    #hero-upi .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #hero-upi .hero-buttons .btn {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    #hero-upi .hero-content h1 {
+        font-size: 28px;
+    }
+
+    #features-upi .section-header h2,
+    #how-it-works .section-header h2,
+    #pricing-upi .section-header h2,
+    #cta-upi .cta-content h2 {
+        font-size: 28px;
+    }
+
+    #features-upi .features-grid,
+    #pricing-upi .pricing-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #how-it-works .step-card {
+        width: 100%;
+    }
+}

@@ -1,0 +1,932 @@
+/* Connected Banking Page Styles */
+
+/* Modern CSS Reset and Variables */
+:root {
+    --primary-color: #4CAF50;
+    --primary-light: #e8f5e9;
+    --primary-dark: #2e7d32;
+    --text-dark: #1a1a1a;
+    --text-light: #666666;
+    --white: #ffffff;
+    --glass-bg: rgba(255, 255, 255, 0.9);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hero Section */
+#connected-banking-hero {
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#connected-banking-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="none" stroke="%234CAF50" stroke-width="0.5" stroke-opacity="0.1"/></svg>') repeat;
+    opacity: 0.1;
+}
+
+#connected-banking-hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+#connected-banking-hero .hero-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+#connected-banking-hero .hero-content .tag {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    color: var(--primary-color);
+    padding: 8px 20px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+    display: inline-block;
+    box-shadow: var(--glass-shadow);
+    transition: var(--transition);
+}
+
+#connected-banking-hero .hero-content .tag:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+#connected-banking-hero .hero-content h1 {
+    font-size: 56px;
+    color: var(--text-dark);
+    margin: 24px 0;
+    line-height: 1.2;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--text-dark) 0%, var(--primary-dark) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#connected-banking-hero .hero-content p {
+    font-size: 20px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.hero-buttons .btn {
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+.primary-btn {
+    background: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(76, 175, 80, 0.4);
+    background: var(--primary-dark);
+}
+
+.secondary-btn {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    color: var(--text-dark);
+    box-shadow: var(--glass-shadow);
+}
+
+.secondary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    background: var(--white);
+}
+
+#connected-banking-hero .hero-image {
+    flex: 1;
+    text-align: right;
+    position: relative;
+}
+
+#connected-banking-hero .hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+}
+
+#connected-banking-hero .hero-image img:hover {
+    /* transform: translateY(-10px) rotate(2deg); */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Overview Section */
+#banking-overview {
+    padding: 100px 0;
+    background: var(--white);
+    position: relative;
+}
+
+#banking-overview::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--primary-color), transparent);
+}
+
+#banking-overview .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#banking-overview h2 {
+    font-size: 42px;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+#banking-overview .overview-text {
+    font-size: 20px;
+    color: var(--text-light);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+}
+
+/* Key Features Section */
+#key-features {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+}
+
+#key-features h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+#key-features .highlight {
+    color: var(--primary-color);
+    position: relative;
+}
+
+#key-features .highlight::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--primary-color);
+    border-radius: 2px;
+}
+
+#key-features .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#key-features .feature-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    text-align: center;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+#key-features .feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(76, 175, 80, 0) 100%);
+    opacity: 0;
+    transition: var(--transition);
+}
+
+#key-features .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+#key-features .feature-card:hover::before {
+    opacity: 1;
+}
+
+#key-features .feature-icon {
+    font-size: 48px;
+    margin-bottom: 24px;
+    display: block;
+    transition: var(--transition);
+}
+
+#key-features .feature-card:hover .feature-icon {
+    transform: scale(1.1);
+}
+
+#key-features .feature-card h3 {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+#key-features .feature-card p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* How to Use Section */
+#how-to-use {
+    padding: 100px 0;
+    background: var(--white);
+    position: relative;
+}
+
+#how-to-use h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+#how-to-use .steps-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+    position: relative;
+}
+
+#how-to-use .steps-container::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary-color), var(--primary-light));
+    z-index: 0;
+}
+
+#how-to-use .step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+#how-to-use .step-number {
+    width: 80px;
+    height: 80px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 auto 24px;
+    box-shadow: var(--glass-shadow);
+    transition: var(--transition);
+}
+
+#how-to-use .step:hover .step-number {
+    transform: scale(1.1);
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+#how-to-use .step h3 {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+#how-to-use .step p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Why Choose Section */
+#why-choose {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+}
+
+#why-choose h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+#why-choose .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#why-choose .benefit-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    text-align: center;
+    transition: var(--transition);
+}
+
+#why-choose .benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+#why-choose .check-icon {
+    font-size: 36px;
+    margin-bottom: 20px;
+    display: block;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+#why-choose .benefit-card:hover .check-icon {
+    transform: scale(1.1);
+}
+
+#why-choose .benefit-card h3 {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    font-weight: 600;
+}
+
+#why-choose .benefit-card p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.6;
+}
+
+/* Testimonials Section */
+#testimonials {
+    padding: 100px 0;
+    background: var(--white);
+    position: relative;
+}
+
+#testimonials h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.testimonial-card {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    text-align: center;
+    position: relative;
+}
+
+.testimonial-card::before {
+    content: '"';
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 120px;
+    color: var(--primary-color);
+    opacity: 0.1;
+    font-family: serif;
+}
+
+.testimonial-text {
+    font-size: 24px;
+    color: var(--text-dark);
+    line-height: 1.8;
+    margin-bottom: 40px;
+    font-style: italic;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-author {
+    text-align: center;
+}
+
+.author-name {
+    font-size: 20px;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.author-title {
+    font-size: 16px;
+    color: var(--text-light);
+}
+
+/* FAQ Section */
+#faq {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+}
+
+#faq h2 {
+    text-align: center;
+    font-size: 42px;
+    color: var(--text-dark);
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.faq-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: var(--text-dark);
+    margin-bottom: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-item h3::after {
+    content: '+';
+    font-size: 24px;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.faq-item.active h3::after {
+    transform: rotate(45deg);
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: var(--text-light);
+    line-height: 1.6;
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px solid var(--glass-border);
+}
+
+/* CTA Section */
+#cta {
+    padding: 100px 0;
+    background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="40" fill="none" stroke="%234CAF50" stroke-width="0.5" stroke-opacity="0.1"/></svg>') repeat;
+    opacity: 0.1;
+}
+
+#cta .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-content {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    padding: 60px;
+    border-radius: 30px;
+    box-shadow: var(--glass-shadow);
+    border: 1px solid var(--glass-border);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-content h2 {
+    font-size: 42px;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+    font-weight: 700;
+}
+
+.cta-content p {
+    font-size: 20px;
+    color: var(--text-light);
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons .btn {
+    padding: 16px 32px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+}
+
+/* Features Section */
+#banking-features {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+#banking-features h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#banking-features .highlight {
+    color: #4CAF50;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* How It Works Section */
+#how-it-works {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+#how-it-works h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.steps-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.step {
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+.step:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: -15px;
+    width: 30px;
+    height: 2px;
+    background-color: #4CAF50;
+}
+
+.step-number {
+    width: 80px;
+    height: 80px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.step h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.step p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+#banking-benefits {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+#banking-benefits h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.benefit-card {
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.benefit-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.benefit-card p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Download App Section */
+#download-app {
+    padding: 80px 0;
+    background: linear-gradient(to right, #e6ffe6, #d4edda);
+}
+
+#download-app .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+#download-app h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#download-app p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.app-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app-buttons .btn {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.app-buttons .btn img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.app-store-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.app-store-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.play-store-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.play-store-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #connected-banking-hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #connected-banking-hero .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    .steps-container {
+        flex-direction: column;
+    }
+
+    .step:not(:last-child)::after {
+        display: none;
+    }
+
+    .app-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #how-to-use .steps-container {
+        flex-direction: column;
+    }
+
+    #how-to-use .step:not(:last-child)::after {
+        display: none;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonial-card {
+        padding: 20px;
+    }
+
+    .testimonial-text {
+        font-size: 18px;
+    }
+}

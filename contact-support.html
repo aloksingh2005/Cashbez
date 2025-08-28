@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Support - Cashbez</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contact-support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <!-- Header content will be dynamically loaded here -->
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="contact-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="tag">24/7 SUPPORT</span>
+                    <h1>We're Here to <br><span class="highlight">Help You</span></h1>
+                    <p>Our dedicated support team is ready to assist you with any questions or concerns. Choose your preferred way to reach us below.</p>
+                    <div class="hero-buttons">
+                        <button class="btn primary-btn">Start Live Chat</button>
+                        <button class="btn secondary-btn">View FAQs</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/contact/support-hero.png" alt="Customer Support">
+                </div>
+            </div>
+        </section>
+
+        <!-- Support Options -->
+        <section class="support-options">
+            <div class="container">
+                <div class="options-grid">
+                    <div class="option-card">
+                        <i class="fas fa-headset"></i>
+                        <h3>Live Chat</h3>
+                        <p>Chat with our support team in real-time for immediate assistance.</p>
+                        <button class="chat-btn">Start Chat</button>
+                        <span class="availability">Available 24/7</span>
+                    </div>
+                    <div class="option-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Support</h3>
+                        <p>Send us an email and we'll respond within 24 hours.</p>
+                        <a href="mailto:support@cashbez.com" class="chat-btn">Send Email</a>
+                        <span class="response-time">Response within 24 hours</span>
+                    </div>
+                    <div class="option-card">
+                        <i class="fas fa-phone"></i>
+                        <h3>Phone Support</h3>
+                        <p>Call our support team directly for personalized assistance.</p>
+                        <a href="tel:+1234567890" class="chat-btn">Call Now</a>
+                        <span class="availability">Mon-Fri, 9AM-6PM EST</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section">
+            <div class="container">
+                <div class="form-container">
+                    <div class="form-header">
+                        <h2>Send Us a Message</h2>
+                        <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Office Locations -->
+        <section class="office-locations">
+            <div class="container">
+                <h2>Our Office Locations</h2>
+                <div class="locations-grid">
+                    <div class="location-card">
+                        <div class="location-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>New York Office</h3>
+                        </div>
+                        <div class="location-details">
+                            <p>123 Business Avenue</p>
+                            <p>New York, NY 10001</p>
+                            <p>United States</p>
+                            <a href="#" class="direction-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>London Office</h3>
+                        </div>
+                        <div class="location-details">
+                            <p>45 Tech Street</p>
+                            <p>London, EC2A 4NE</p>
+                            <p>United Kingdom</p>
+                            <a href="#" class="direction-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <div class="location-header">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Singapore Office</h3>
+                        </div>
+                        <div class="location-details">
+                            <p>78 Innovation Road</p>
+                            <p>Singapore 238801</p>
+                            <p>Singapore</p>
+                            <a href="#" class="direction-link">Get Directions <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Preview -->
+        <section class="faq-preview">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3>How do I reset my password?</h3>
+                        <p>You can reset your password by clicking the "Forgot Password" link on the login page and following the instructions sent to your email.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>What payment methods do you accept?</h3>
+                        <p>We accept all major credit cards, PayPal, and bank transfers. For specific payment methods in your region, please contact our support team.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3>How can I update my account information?</h3>
+                        <p>You can update your account information by logging into your account and navigating to the "Account Settings" section.</p>
+                    </div>
+                </div>
+                <a href="faq.html" class="view-all-btn">View All FAQs <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget">
+        <button class="chat-toggle">
+            <i class="fas fa-comments"></i>
+            Chat with Us
+        </button>
+        <div class="chat-container">
+            <div class="chat-header">
+                <h3>Live Chat Support</h3>
+                <button class="close-chat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages"></div>
+            <div class="chat-input">
+                <input type="text" placeholder="Type your message...">
+                <button class="send-message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <!-- Footer content will be dynamically loaded here -->
+    </footer>
+
+    <script src="js/contact-support.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

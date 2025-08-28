@@ -1,0 +1,236 @@
+/* Header Styles */
+header {
+    background-color: #fff; /* White background */
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    position: fixed; /* Make header fixed */
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; /* Ensure it spans the full width */
+    z-index: 9999; /* Increased z-index to ensure it's on top */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scroll effect */
+}
+
+/* Add padding to body to prevent content from hiding under fixed header */
+body {
+    padding-top: 80px; /* Adjust this value based on your header height */
+}
+
+/* Optional: Hide header on scroll down, show on scroll up */
+header.hide {
+    transform: translateY(-100%);
+}
+
+header.show {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 30px;
+    position: relative; /* For dropdown positioning */
+    padding-bottom: 10px; /* Add padding to cover the gap to the dropdown */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    display: flex; /* To align arrow */
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: #4CAF50; /* Example hover color, adjust to match image */
+}
+
+.dropdown-arrow {
+    margin-left: 5px;
+    border: solid #333;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+.has-dropdown:hover .dropdown-arrow {
+    transform: rotate(225deg); /* Arrow points up on hover */
+}
+
+.dropdown-menu {
+    /* display: none; */ /* Replaced by visibility and opacity */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    min-width: 200px;
+    border-radius: 8px;
+    padding: 10px 0;
+    top: 100%;
+    left: 0;
+}
+
+.has-dropdown:hover .dropdown-menu {
+    /* display: block; */ /* Replaced by visibility and opacity */
+    visibility: visible;
+    opacity: 1;
+}
+
+.products-menu {
+    /* display: none; */ /* Replaced by visibility and opacity */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Smooth transition */
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1000;
+    min-width: 600px;
+    border-radius: 8px;
+    padding: 20px;
+    top: 100%;
+    left: -150px;
+}
+
+.has-dropdown:hover .products-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.products-menu .dropdown-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Changed to 5 columns for a 5x5 layout */
+    gap: 20px;
+}
+
+.dropdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #4CAF50;
+}
+
+.dropdown-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.dropdown-item span {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.dropdown-menu.developers-menu .dropdown-item,
+.dropdown-menu.company-menu .dropdown-item {
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu.developers-menu .dropdown-item:hover,
+.dropdown-menu.company-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #4CAF50;
+}
+
+.dropdown-menu.service-menu .dropdown-item {
+    display: block;
+    text-align: left;
+    padding: 10px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-menu.service-menu .dropdown-item:hover {
+    background-color: #f0f0f0;
+    color: #4CAF50;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header-buttons a {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.header-buttons a:first-child {
+    color: #4CAF50;
+    border: 1px solid #4CAF50;
+    background-color: transparent;
+}
+
+.header-buttons a:first-child:hover {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.header-buttons a:last-child {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.header-buttons a:last-child:hover {
+    background-color: #45a049;
+    border-color: #45a049;
+}
+
+/* Responsive styles for header buttons */
+@media (max-width: 768px) {
+    .header-buttons {
+        display: none; /* Hide on mobile, you might want to show them in a mobile menu */
+    }
+}

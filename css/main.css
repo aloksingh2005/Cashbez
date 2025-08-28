@@ -1,0 +1,911 @@
+@import 'header.css';
+@import 'footer.css';
+
+/* Basic Reset & Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif; /* Placeholder, will refine with exact fonts from image */
+    line-height: 1.6;
+    color: #333; /* Placeholder */
+    background-color: #fff;
+}
+
+/* Add more global styles as needed */
+
+/* Hero Section Styles */
+#hero {
+    background: linear-gradient(to right, #e6ffe6, #f0fff0); /* Light green gradient */
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 40px;
+}
+
+.hero-content .tag {
+    background-color: #d4edda; /* Light green tag background */
+    color: #28a745; /* Green tag text */
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    color: #333;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.hero-content h1 br {
+    display: block;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.hero-buttons .btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero-buttons .primary-btn {
+    background-color: #7bed9f; /* Light green primary */
+    color: #333;
+}
+
+.hero-buttons .primary-btn:hover {
+    background-color: #6ee693;
+    transform: translateY(-2px);
+}
+
+.hero-buttons .secondary-btn {
+    background-color: #ccc; /* Grey secondary */
+    color: #333;
+}
+
+.hero-buttons .secondary-btn:hover {
+    background-color: #bbb;
+    transform: translateY(-2px);
+}
+
+.hero-features {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the slider */
+    gap: 10px; /* Space between arrows and container */
+    margin-top: 40px;
+    position: relative;
+    width: 100%; /* Ensure it spans full width */
+    max-width: none; /* Remove any max-width constraint */
+    padding: 0 20px; /* Add some padding to the sides */
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    max-width: none; /* Allow it to take full width */
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    /* transition: transform 0.5s ease-in-out; */ /* Removed for continuous animation */
+    justify-content: flex-start; /* Align items to the start */
+    animation: scroll-left var(--scroll-speed, 30s) linear infinite; /* Apply infinite scroll animation */
+    width: fit-content; /* Ensure track takes the full width of its content */
+}
+
+/* Define the scroll animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%); /* Move half the width of the duplicated content */
+    }
+}
+
+.hero-features .slider-track {
+    --scroll-speed: 40s; /* Slower speed for hero features */
+}
+
+.feature-item {
+    flex: 0 0 auto; /* Prevent items from shrinking */
+    width: 120px; /* Fixed width for each item, adjust as needed */
+    text-align: center;
+    padding: 15px;
+    margin: 0 10px; /* Space between items */
+}
+
+.slider-arrow {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10; /* Ensure arrows are above content */
+}
+
+.slider-arrow:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Ensure images within feature items are correctly sized */
+.feature-item img {
+    width: 60px; /* Adjust size */
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: right;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Unified Services Section Styles */
+#unified-services {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+#unified-services h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#unified-services h2 .highlight {
+    color: #4CAF50; /* Green highlight */
+}
+
+#unified-services .section-description {
+    font-size: 18px;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 50px auto;
+    line-height: 1.6;
+}
+
+.unified-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.unified-image {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    height: auto;
+}
+
+.unified-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.unified-tag {
+    position: absolute;
+    bottom: 20px; /* Adjust position */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #7bed9f; /* Light green tag */
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 30px;
+    max-width: 600px; /* Adjust as needed */
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+}
+
+.service-item img {
+    width: 60px; /* Adjust icon size */
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.service-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Banking & Digital Services Section Styles */
+#banking-digital-services {
+    padding: 80px 0;
+    background-color: #f9f9f9; /* Light grey background */
+}
+
+#banking-digital-services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    border-bottom: 2px solid #eee;
+    overflow-x: auto; /* Allow horizontal scrolling for many tabs */
+    white-space: nowrap;
+}
+
+.tab-btn {
+    background-color: transparent;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    white-space: nowrap;
+}
+
+.tab-btn.active {
+    color: #4CAF50;
+    border-bottom: 2px solid #4CAF50;
+}
+
+.tab-btn:hover:not(.active) {
+    color: #333;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.banking-main-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.banking-image {
+    flex: 1;
+    text-align: center;
+}
+
+.banking-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.banking-text-content {
+    flex: 1;
+}
+
+.banking-text-content .tag {
+    background-color: #d4edda;
+    color: #28a745;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.banking-text-content h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.banking-text-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.banking-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.banking-buttons .btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.banking-buttons .primary-btn {
+    background-color: #7bed9f; /* Light green primary */
+    color: #333;
+}
+
+.banking-buttons .primary-btn:hover {
+    background-color: #6ee693;
+    transform: translateY(-2px);
+}
+
+.banking-buttons .secondary-btn {
+    background-color: #ccc; /* Grey secondary */
+    color: #333;
+}
+
+.banking-buttons .secondary-btn:hover {
+    background-color: #bbb;
+    transform: translateY(-2px);
+}
+
+.banking-digital-grid {
+    text-align: center;
+}
+
+.banking-digital-grid h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.banking-digital-grid .highlight {
+    color: #4CAF50;
+}
+
+.banking-digital-grid .grid-description {
+    font-size: 16px;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto 40px auto;
+}
+
+.digital-service-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.digital-service-item {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.digital-service-item:hover {
+    transform: translateY(-5px);
+}
+
+.digital-service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.digital-service-item span {
+    font-size: 15px;
+    font-weight: bold;
+    color: #555;
+}
+
+.view-all-services {
+    display: inline-block;
+    text-decoration: none;
+    color: #4CAF50;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+.view-all-services:hover {
+    color: #333;
+}
+
+/* Mission Statement Section Styles */
+#mission-statement {
+    padding: 80px 0;
+    background-color: #f0fff0; /* Lightest green background */
+}
+
+#mission-statement .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#mission-statement .container:first-of-type {
+    margin-bottom: 50px;
+}
+
+.mission-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.mission-content h2 {
+    font-size: 38px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.mission-content h2 .highlight {
+    color: #4CAF50;
+}
+
+.mission-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.mission-content h3 {
+    font-size: 24px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.mission-content .btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: #7bed9f; /* Light green primary */
+    color: #333;
+}
+
+.mission-content .btn:hover {
+    background-color: #6ee693;
+    transform: translateY(-2px);
+}
+
+.mission-image {
+    flex: 1;
+    text-align: center;
+}
+
+.mission-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.statistics-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    border-top: 1px solid #e0e0e0; /* Separator line */
+}
+
+.statistic-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    flex: 1;
+    min-width: 180px; /* Ensure items don't get too small */
+}
+
+.statistic-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.statistic-item span {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.statistic-item p {
+    font-size: 16px;
+    color: #666;
+    margin: 0;
+}
+
+/* Client Testimonials Section Styles */
+#client-testimonials {
+    padding: 80px 0;
+    background: linear-gradient(to right, #f0fff0, #e6ffe6); /* Light green gradient */
+    text-align: center;
+    position: relative;
+}
+
+#client-testimonials .container {
+    max-width: none; /* Allow full width */
+    margin: 0 auto;
+    padding: 0; /* Remove horizontal padding here, content will add its own */
+}
+
+#client-testimonials .tag {
+    background-color: #d4edda;
+    color: #28a745;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+#client-testimonials h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#client-testimonials h2 .highlight {
+    color: #4CAF50;
+}
+
+.testimonials-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    width: 100%; /* Ensure it spans full width */
+    margin: 0 auto; /* Center if needed */
+    padding: 0 20px; /* Add padding here for content */
+}
+
+.testimonial-cards-wrapper {
+    display: flex;
+    gap: 30px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 20px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    animation: scroll-left var(--scroll-speed, 60s) linear infinite; /* Apply infinite scroll animation */
+    justify-content: flex-start; /* Align items to the start */
+    width: fit-content; /* Ensure track takes the full width of its content */
+}
+
+#client-testimonials .testimonial-cards-wrapper {
+    --scroll-speed: 60s; /* Adjust speed for testimonials */
+}
+
+.testimonial-cards-wrapper::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, Opera */
+}
+
+.testimonial-card {
+    flex: 0 0 400px; /* Fixed width for cards, adjust as needed */
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    scroll-snap-align: start;
+}
+
+.client-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.client-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+}
+
+.client-details .client-name {
+    font-weight: bold;
+    font-size: 18px;
+    color: #333;
+    display: block;
+}
+
+.client-details .client-location {
+    font-size: 14px;
+    color: #777;
+}
+
+.stars {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.testimonial-card p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Common styles for carousel arrows */
+.carousel-arrow {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    z-index: 10; /* Ensure arrows are above cards */
+}
+
+.carousel-arrow:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+}
+
+/* Download App Section Styles */
+#download-app {
+    background: linear-gradient(to right, #e6ffe6, #d4edda); /* Green gradient */
+    padding: 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#download-app .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.download-app-content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.download-app-content .tag {
+    background-color: #28a745; /* Darker green tag background */
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.download-app-content h2 {
+    font-size: 42px;
+    color: #333;
+    margin: 20px 0;
+    line-height: 1.2;
+}
+
+.download-app-content h2 br {
+    display: block;
+}
+
+.download-app-content p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.app-buttons .btn {
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.app-buttons .btn img {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.app-store-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.app-store-btn:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+
+.play-store-btn {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.play-store-btn:hover {
+    background-color: #45a049;
+    transform: translateY(-2px);
+}
+
+.download-app-image {
+    flex: 1;
+    text-align: center;
+}
+
+.download-app-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Seamless Services Section Styles */
+#seamless-services {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #f0fff0; /* Light background */
+}
+
+#seamless-services .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#seamless-services h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+#seamless-services h2 .highlight {
+    color: #4CAF50; /* Green highlight */
+}
+
+.seamless-service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive grid */
+    gap: 30px;
+    justify-items: center; /* Center items in the grid */
+    align-items: start;
+    padding: 0 50px; /* Add horizontal padding to the grid */
+}
+
+.seamless-service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.seamless-service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.seamless-service-item img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    object-fit: contain;
+}
+
+.seamless-service-item span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+} 

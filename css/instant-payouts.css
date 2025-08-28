@@ -1,0 +1,420 @@
+/* Instant Payouts Page Styles */
+
+/* Hero Section - Payouts */
+#hero-payouts {
+    background: linear-gradient(to right, #e0ffe0, #f0fff0); /* Lighter green gradient */
+    padding: 100px 0 80px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero-payouts .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#hero-payouts .hero-content {
+    flex: 1;
+    max-width: 55%;
+    padding-right: 40px;
+}
+
+#hero-payouts .hero-content .tag {
+    background-color: #c8e6c9; /* Softer green tag background */
+    color: #388e3c; /* Darker green tag text */
+    padding: 6px 18px;
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    display: inline-block;
+    letter-spacing: 0.5px;
+}
+
+#hero-payouts .hero-content h1 {
+    font-size: 52px;
+    color: #212121;
+    margin: 25px 0;
+    line-height: 1.15;
+    font-weight: 800;
+}
+
+#hero-payouts .hero-content h1 br {
+    display: block;
+}
+
+#hero-payouts .hero-content p {
+    font-size: 19px;
+    color: #555;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+#hero-payouts .hero-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+/* New Button Styles for engaging content */
+#hero-payouts .hero-buttons .btn {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#hero-payouts .hero-buttons .primary-btn {
+    background-color: #4CAF50; /* Primary green */
+    color: #fff;
+    box-shadow: 0 8px 15px rgba(76, 175, 80, 0.3);
+}
+
+#hero-payouts .hero-buttons .primary-btn:hover {
+    background-color: #43A047;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 20px rgba(76, 175, 80, 0.4);
+}
+
+#hero-payouts .hero-buttons .secondary-btn {
+    background-color: #f0f0f0; /* Light grey */
+    color: #4CAF50;
+    border: 2px solid #4CAF50;
+}
+
+#hero-payouts .hero-buttons .secondary-btn:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+#hero-payouts .hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+#hero-payouts .hero-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Benefits Section - Payouts */
+#benefits-payouts {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+#benefits-payouts .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#benefits-payouts h2 {
+    font-size: 40px;
+    color: #212121;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+#benefits-payouts h2 .highlight {
+    color: #4CAF50;
+}
+
+#benefits-payouts .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+}
+
+#benefits-payouts .benefit-card {
+    background-color: #f8f8f8;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+#benefits-payouts .benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    background-color: #e6ffe6; /* Light green on hover */
+}
+
+#benefits-payouts .benefit-card .icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #4CAF50, #8bc34a); /* Green gradient for icons */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    box-shadow: 0 5px 10px rgba(76, 175, 80, 0.2);
+}
+
+#benefits-payouts .benefit-card .icon-wrapper img {
+    width: 45px;
+    height: 45px;
+    filter: brightness(0) invert(1); /* Make icons white */
+}
+
+/* How It Works Section - Payouts */
+#how-it-works-payouts {
+    padding: 100px 0;
+    text-align: center;
+    background-color: #f0fff0;
+}
+
+#how-it-works-payouts .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#how-it-works-payouts h2 {
+    font-size: 40px;
+    color: #212121;
+    margin-bottom: 60px;
+    font-weight: 700;
+}
+
+#how-it-works-payouts h2 .highlight {
+    color: #4CAF50;
+}
+
+#how-it-works-payouts .steps-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    padding: 0 50px;
+}
+
+#how-it-works-payouts .steps-container::before {
+    content: '';
+    position: absolute;
+    top: 35px;
+    left: 70px;
+    right: 70px;
+    height: 4px;
+    background-color: #d4edda;
+    z-index: 1;
+}
+
+#how-it-works-payouts .step-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    padding: 0 15px;
+}
+
+#how-it-works-payouts .step-number {
+    width: 70px;
+    height: 70px;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#how-it-works-payouts .step-item h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+#how-it-works-payouts .step-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Call to Action Section - Payouts */
+#cta-payouts {
+    background: linear-gradient(to right, #4CAF50, #8bc34a); /* Green gradient */
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
+}
+
+#cta-payouts .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+#cta-payouts .cta-content h2 {
+    font-size: 44px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+#cta-payouts .cta-content h2 .highlight {
+    color: #fff;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 5px;
+}
+
+#cta-payouts .cta-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+#cta-payouts .cta-content .btn {
+    background-color: #fff;
+    color: #4CAF50;
+    padding: 15px 35px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#cta-payouts .cta-content .btn:hover {
+    background-color: #f0f0f0;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    #hero-payouts .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #hero-payouts .hero-content {
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+
+    #hero-payouts .hero-image {
+        text-align: center;
+    }
+
+    #how-it-works-payouts .steps-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    #how-it-works-payouts .steps-container::before {
+        width: 4px;
+        height: calc(100% - 140px); /* Adjust height for vertical line */
+        left: 50%;
+        transform: translateX(-50%);
+        top: 70px;
+        bottom: 70px;
+    }
+
+    #how-it-works-payouts .step-item {
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    #how-it-works-payouts .step-item:last-child {
+        margin-bottom: 0;
+    }
+
+    #how-it-works-payouts .step-number {
+        margin-bottom: 15px; /* Adjust margin for vertical layout */
+    }
+}
+
+@media (max-width: 768px) {
+    #hero-payouts .hero-content h1 {
+        font-size: 42px;
+    }
+
+    #benefits-payouts h2,
+    #how-it-works-payouts h2,
+    #cta-payouts .cta-content h2 {
+        font-size: 34px;
+    }
+
+    #hero-payouts .hero-content p,
+    #benefits-payouts .benefit-card p,
+    #how-it-works-payouts .step-item p,
+    #cta-payouts .cta-content p {
+        font-size: 16px;
+    }
+
+    #hero-payouts .hero-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #hero-payouts .hero-buttons .btn {
+        width: 100%;
+    }
+
+    #benefits-payouts .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    #hero-payouts .hero-content h1 {
+        font-size: 36px;
+    }
+
+    #benefits-payouts h2,
+    #how-it-works-payouts h2,
+    #cta-payouts .cta-content h2 {
+        font-size: 28px;
+    }
+
+    #benefits-payouts .benefit-card,
+    #how-it-works-payouts .step-item {
+        padding: 25px;
+    }
+
+    #how-it-works-payouts .step-number {
+        width: 60px;
+        height: 60px;
+        font-size: 24px;
+    }
+
+    #cta-payouts .cta-content .btn {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+}
